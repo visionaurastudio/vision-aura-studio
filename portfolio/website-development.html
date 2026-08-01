@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Development | Vision Aura Studio</title>
+<meta name="description" content="Modern, responsive websites built by Vision Aura Studio.">
+<link rel="icon" type="image/jpeg" href="../assets/images/logo.jpeg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animations.css">
+<link rel="stylesheet" href="../css/portfolio-page.css">
+</head>
+<body>
+
+<div class="ambient-bg" aria-hidden="true">
+  <div class="glow glow-purple"></div>
+  <div class="glow glow-orange"></div>
+  <div class="grain"></div>
+</div>
+
+<header class="navbar scrolled" id="navbar">
+  <div class="navbar-inner container">
+    <a href="../index.html" class="brand" aria-label="Vision Aura Studio home">
+      <img src="../assets/images/logo.jpeg" alt="Vision Aura Studio logo" class="brand-logo">
+      <span class="brand-name">VISION AURA<em>STUDIO</em></span>
+    </a>
+    <div class="navbar-actions">
+      <a href="../index.html#contact" class="btn btn-glow btn-sm"><span>Start a Project</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="pf-hero">
+    <div class="container">
+      <a href="../index.html#portfolio" class="pf-back">
+        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Portfolio
+      </a>
+      <p class="eyebrow"><span class="eyebrow-dot"></span>Development</p>
+      <h1 class="pf-hero-title">Website <span class="gradient-text">Development.</span></h1>
+      <p class="pf-hero-sub">Fast, modern, conversion-focused websites — built by hand, never from a template. Click any project to open the live site.</p>
+    </div>
+  </section>
+
+  <section class="projects-section">
+    <div class="container">
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="../assets/images/logo.jpeg" alt="Vision Aura Studio logo" class="footer-logo">
+      <div>
+        <p class="footer-name">Vision Aura Studio</p>
+        <p class="footer-tag">We Visualize Your Vision.</p>
+      </div>
+    </div>
+    <nav class="footer-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#portfolio">Portfolio</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="footer-bottom container">
+    <p class="footer-motto">Create &bull; Inspire &bull; Impact</p>
+    <p class="footer-copy">&copy; <span id="year">2026</span> Vision Aura Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="video-lightbox" id="videoLightbox" aria-hidden="true">
+  <div class="lightbox-bg"></div>
+  <button class="lightbox-close" id="videoLightboxClose" aria-label="Close preview">
+    <svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20"/></svg>
+  </button>
+  <div class="lightbox-body" id="videoLightboxBody"></div>
+</div>
+
+<script src="../js/data/website-development.js"></script>
+<script src="../js/portfolio-render.js" defer></script>
+</body>
+</html>
